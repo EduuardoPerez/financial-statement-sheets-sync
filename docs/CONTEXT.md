@@ -8,12 +8,15 @@ purchase identities, installment charges, and future sheet import rows are
 separate.
 
 The [Project](https://github.com/users/EduuardoPerez/projects/1) tracks current
-status. [Processor #14](https://github.com/EduuardoPerez/financial-statement-processor/issues/14)
-tracks the reconciliation split and successor issues; [#18](https://github.com/EduuardoPerez/financial-statement-processor/issues/18)
-tracks persistent human review, and [#16–#19](https://github.com/EduuardoPerez/financial-statement-processor/issues/16)
-cover read-only sheet inspection through test-copy validation. Ownership links
-will move to this repository as issues are split. The future orchestrator owns
-step sequencing, paths, checkpoints, and resumption.
+status. Synchronizer [#1](https://github.com/EduuardoPerez/financial-statement-sheets-sync/issues/1)
+reads the package; [#2](https://github.com/EduuardoPerez/financial-statement-sheets-sync/issues/2)
+groups Mercado Pago operations; [#3](https://github.com/EduuardoPerez/financial-statement-sheets-sync/issues/3)
+finds bank candidates; and [#4](https://github.com/EduuardoPerez/financial-statement-sheets-sync/issues/4)
+produces reproducible links and review output. Processor [#18](https://github.com/EduuardoPerez/financial-statement-processor/issues/18)
+tracks persistent human review; processor [#16–#19](https://github.com/EduuardoPerez/financial-statement-processor/issues/16)
+cover read-only sheet inspection through test-copy validation. The separate
+[orchestrator repository card](https://github.com/EduuardoPerez/financial-statement-sheets-sync/issues/5)
+waits for the synchronizer command/result boundary.
 
 Prior private research found 253 transaction CSV to balance links and 51 paired
 balance inflow/payment groups. Those are candidate evidence, not confirmed
